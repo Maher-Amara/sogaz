@@ -5,7 +5,7 @@ Logiciel de stendarisation dimensionnement d'une poste de détente gaz.
 La standardisation et la digitalisation du choix des équipements combinable d'une poste de détente selon la choix de pression et du débit normalisée demandé.
 
 ## Main features:
-* Détermination de diamètre normalisé 
+* Détermination de diamètre normalisé :
 * Détermination de épaisseur nominale 
 * Choix du vanne d'entrée
 * Choix du filtre 
