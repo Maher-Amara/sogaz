@@ -1,74 +1,90 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image" href="./img/favicon.png" />
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link href="./style.css" rel="stylesheet">
+        <link rel="shortcut icon" type="image" href="./img/favicon.png" />
+        <title>soGaz</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./img/logo.png" alt="tunagaz" height="50px">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>soGaz | Moyene pression</title>
-  </head>
-  <body>
-    <header>
-        <img src="./img/logo.png" alt="tunagaz">
-    </header>
-    <h1>Moyene pression</h1>
-    <div class="row">
-        <div class="col">
-            <form>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Débit (Nm3/h)</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected></option>
-                        <option value="3000">3000</option>
-                    </select>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dimentionnement
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./mp.html">Moyenne pression</a></li>
+                                    <li><a class="dropdown-item" href="./hp.html">Haute pression</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Pression d'entrée (bar)</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected></option>
-                        <option value="4">4</option>
-                    </select>
+            </nav>
+        </header>
+        <div class="container m-auto">
+            <div class="row d-flex justify-content-center mb-4">
+                <div class="col-md-4"><h1>Moyenne pression</h1></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Débit (Nm3/h)</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected></option>
+                                <option value="3000">3000</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Pression (bar)</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected></option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
+                            <a class="small" href="./index.html">Retour</a>
+                            <button class="btn btn-primary" type="submit" value="Submit">Calculer</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                    <a class="small" href="./index.html">retour</a>
-                    <button class="btn btn-primary" type="submit" value="Submit">Calculer</button>
+                <div class="col">
+                    <table class="table table-striped">
+                        <thead>
+                          <tr><th scope="col">Équipements</th><th scope="col">Caractéristiques</th></tr>
+                        </thead>
+                        <tbody>
+                          <tr><td style="white-space:nowrap;">Diamettre nominale d'entrée</td><td style="white-space:nowrap;"></td></tr>
+                          <tr><td style="white-space:nowrap;">Epaisseur nominale</td><td style="white-space:nowrap;"></td></tr>
+                          <tr><td style="white-space:nowrap;">Vanne d'entrée</td><td style="white-space:nowrap;"></td></tr>
+                          <tr><td style="white-space:nowrap;">Filtre</td><td style="white-space:nowrap;"></td></tr>
+                          <tr><td style="white-space:nowrap;">Détendeur</td><td style="white-space:nowrap;"></td></tr>
+                          <tr><td style="white-space:nowrap;">Compteur</td><td style="white-space:nowrap;"></td></tr>
+                        </tbody>
+                    </table>
                 </div>
-            </form>
+            </div>
         </div>
-        <div class="col">
-            <table class="table table-striped">
-                <thead>
-                  <tr><th scope="col">Équipements</th><th scope="col">Caractéristiques</th></tr>
-                </thead>
-                <tbody>
-                  <tr><td style="white-space:nowrap;">Diamettre nominale d'entrée</td><td style="white-space:nowrap;">1"1/2(pouce) / 40(mm)</td></tr>
-                  <tr><td style="white-space:nowrap;">Epaisseur nominale</td><td style="white-space:nowrap;">5,08(mm)</td></tr>
-                  <tr><td style="white-space:nowrap;">Vanne d'entrée</td><td style="white-space:nowrap;">vanne à boisseau spherique DN 1"1/2(pouce)</td></tr>
-                  <tr><td style="white-space:nowrap;">Filtre</td><td style="white-space:nowrap;">DN 1"1/2(pouce) / G1 / V=4L</td></tr>
-                  <tr><td style="white-space:nowrap;">Détendeur</td><td style="white-space:nowrap;">Cg=143 / piloté</td></tr>
-                  <tr><td style="white-space:nowrap;">Compteur</td><td style="white-space:nowrap;">G650 (DN150)/6" (mm)</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <footer>
-        <img src="./img/steel-pipelines-gaz.webp" alt="steel pipelines gaz" style="width: 100%;height: 100px;object-fit: cover;">
-    </footer>
-
-
-
-
-    <!-- Optional JavaScript; choose one of the two! -->
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-    -->
-  </body>
+        <footer>
+            <img src="./img/steel-pipelines-gaz.webp" alt="steel pipelines gaz">
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    </body>
 </html>

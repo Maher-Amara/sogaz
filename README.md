@@ -1,19 +1,17 @@
 # soGaz
-Logiciel de stendarisation dimensionnement d'une poste de détente gaz.
+Software for standardizing the sizing of a gas expansion station.
 
 ## Objectives:
-La standardisation et la digitalisation du choix des équipements combinable d'une poste de détente selon la choix de pression et du débit normalisée demandé.
+Standardization and digitalization of the choice of combinable equipment of a pressure reducing station according to the choice of pressure and flow rate required.
 
 ## Main features:
-* Détermination de diamètre normalisé :
-* Détermination de épaisseur nominale 
-* Choix du vanne d'entrée
-* Choix du filtre 
-* Choix de détendeur 
-* Choix du compteur 
-* Détermisation de la puissance de l'échangeur
-
-## Support of following features:
+* Determination of standard diameter
+* Determination of nominal thickness 
+* Choice of inlet valve
+* Filter selection 
+* Choice of regulator 
+* Choice of meter 
+* Determination of the power of the exchanger
 
 ## Collaborateurs:
 Salma Ouerdi
